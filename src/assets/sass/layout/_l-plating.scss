@@ -1,0 +1,16 @@
+@use "../global" as global;
+
+.l-plating {
+  margin: 0 auto;
+}
+
+.l-plating__inner {
+  background: rgba(255,255,255,.8);
+  width: 100%;
+  height: 100%;
+
+  @include global.mq(sp) {
+    padding: 0 16px;
+  }
+
+}

@@ -1,0 +1,27 @@
+@use "../global" as global;
+
+.l-top {
+  margin: 0 auto;
+  background: url(/assets/img/Mask\ group.png) no-repeat center center/ cover;
+  width: 100%;
+  height: 900px;
+  overflow: hidden;
+  position: relative;
+}
+
+.l-top__nav {
+  display: flex;
+  width: 100%;
+}
+
+.l-top__left {
+  width: 50%;
+  margin-top: 103px;
+  margin-left: 72px;
+}
+
+.l-top__right {
+  width: 50%;
+  margin-top: 32px;
+  // margin-left: -36px;
+}

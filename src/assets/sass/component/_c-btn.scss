@@ -1,0 +1,43 @@
+@use "../global" as global;
+
+.c-btn {
+  background: global.$accent-subColor;
+  padding: 19px 166px;
+  border-radius: 10px;
+  display: inline-block;
+  position: relative;
+  border-bottom: 8px solid #a30000;
+  // box-shadow: 0 3px 5px rgba(163,0,0,1);
+
+  &:hover {
+    margin-top: 5px;
+    border-bottom: 3px solid #a30000;;
+  }
+}
+
+.c-btn__text {
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.48;
+
+  &.-black {
+    color: global.$text-color;
+  }
+}
+
+.c-btn__white {
+  background: linear-gradient(180deg, #ffffff 0%, #ffffff 50%, #f2f2f2 50%, #f2f2f2 100%);
+  padding: 20px 60px;
+  border-radius: 10px;
+  text-align: center;
+  display: inline-block;
+  border-bottom: 8px solid #e6e6e6;
+
+  &:hover {
+    margin-top: 5px;
+    border-bottom: 3px solid #e6e6e6;;
+  }
+
+}

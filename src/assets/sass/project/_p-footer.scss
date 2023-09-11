@@ -1,0 +1,55 @@
+@use "../global" as global;
+
+.p-footer{
+  color: #fff;
+}
+
+.p-footer__logo {
+
+
+}
+
+.p-footer__address {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 116px;
+
+  @include global.mq(sp) {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+
+.p-footer__company {
+
+}
+
+.p-footer__detail {
+  font-weight: 500;
+  line-height: 1.48;
+  position: relative;
+  // padding-left: 54px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    border-left: 2px solid #fff;
+    top: 0;
+    left: -54px;
+    height: 56px;
+
+  }
+}
+
+.p-footer__copyright {
+  margin-left: 60px;
+  font-size: 12px;
+  font-weight: 700;
+
+
+  @include global.mq(sp) {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,10 @@
+@use "../global" as global;
+
+.l-order {
+  margin: 0 auto;
+  width: 100%;
+  height: 350px;
+  background: linear-gradient(270deg, #C1272D 0%, #ED1C24 47.92%, #C1272D 100%);
+  padding-top: 75px;
+  text-align: center;
+}
