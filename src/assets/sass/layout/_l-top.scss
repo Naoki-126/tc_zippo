@@ -2,26 +2,62 @@
 
 .l-top {
   margin: 0 auto;
-  background: url(/assets/img/Mask\ group.png) no-repeat center center/ cover;
+  background:url(/assets/img/top-vector.png) no-repeat right 0%, url(/assets/img/top-background.png) no-repeat center center/ cover;
   width: 100%;
-  height: 900px;
+  height: auto;
   overflow: hidden;
   position: relative;
+
+  @include global.mq(sp) {
+    background: url(/assets/img/top-imgSp.png) no-repeat right 57px, url(/assets/img/top-vector.png) no-repeat right 200%/ 70%, url(/assets/img/bg_01\ 2.png) no-repeat bottom right 80%/ cover;
+    width: 100%;
+    height: auto;
+    position: relative;
+
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+    }
+  }
 }
 
 .l-top__nav {
   display: flex;
   width: 100%;
+  margin-bottom: 92px;
+
+  @include global.mq(sp) {
+    display: block;
+    margin-bottom: 13px;
+  }
 }
 
 .l-top__left {
   width: 50%;
   margin-top: 103px;
-  margin-left: 72px;
+
+  @include global.mq(tab) {
+    width: 100%;
+  }
+
+  @include global.mq(sp) {
+    width: 100%;
+    margin-top: 85px;
+  }
 }
 
 .l-top__right {
   width: 50%;
-  margin-top: 32px;
-  // margin-left: -36px;
+  margin-top: 181px;
+
+  @include global.mq(tab) {
+    display: none;
+  }
+
+  @include global.mq(sp) {
+    display: none;
+  }
 }

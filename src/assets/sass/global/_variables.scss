@@ -10,15 +10,18 @@ $ff-base: 'Noto Sans CJK JP','Noto Sans JP', "Meiryo", "Hiragino Kaku Gothic Pro
 $ff-logo: 'ヒラギノ明朝 w3','hiragino mincho pro', serif;
 $fz-base: 16px;
 $fw-base: 400;
-$lh-base: 1.6;
+$lh-base: 1.48;
 
 // レイアウト
 $wide-width: 1920px;
 $inner-width: 1440px;
 $sp-width: 768px;
+$ss-width:601px;
 
 // ブレークポイント
 $breakpoints: (
+  // 600px以下の場合
+  "ss": "screen and (max-width: #{$ss-width - 1px})",
   // スマホ以下の場合
   "sp": "screen and (max-width: #{$sp-width - 1px})",
   // タブレット以下の場合
