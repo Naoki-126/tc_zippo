@@ -1,0 +1,123 @@
+@use "../global" as global;
+
+.p-step {
+  margin-top: 120px;
+  margin-left: 245px;
+  width: 100%;
+}
+
+.p-step__concept {
+  display: inline-block;
+  background: #fff;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 18px 0 15px;
+}
+
+.p-step__title {
+  width: 640px;
+  height: auto;
+}
+
+.p-step__contents {
+  margin-top: 132px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 66px;
+}
+
+.p-step__content {
+  color: #fff;
+  width: 200px;
+  height:305px;
+}
+
+.p-step__icon {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+.p-step__head {
+  border-left: 8px solid global.$accent-subColor;
+  padding-left: 8px;
+  margin-top: 25px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.p-step__body {
+  margin-top: 22px;
+}
+
+.p-step__pack  {
+  margin-top: 76px;
+  width: 1000px;
+  height: 370px;
+  background: rgba(255, 255, 255, 0.20);
+  border-radius: 20px;
+  color: #fff;
+  display: flex;
+}
+
+.p-step__left {
+  width: 638px;
+}
+
+.p-step__right {
+  width: calc(1000px - 638px);
+}
+
+.p-step__subTitle {
+  margin-top: 60px;
+  margin-left: 100px;
+  font-size: 24px;
+  font-weight: 700;
+  position: relative;
+  padding-left: 11px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background: url(/assets/img/step_icon02\ 2.svg) no-repeat center center / contain;
+    width: 42px;
+    height: 43px;
+    top: 0%;
+    left: -53px;
+  }
+}
+
+.p-step__row {
+  margin-top: 41px;
+  margin-left: 41px;
+}
+
+.p-step__text {
+  font-size: 18px;
+}
+
+.p-step__detail {
+  display: inline-block;
+  margin-top: 31px;
+  padding: 0 40px;
+  border: 1px solid #fff;
+  border-radius: 99px;
+}
+
+.p-step__lists {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px 96px;
+}
+
+.p-step__list {
+  margin-left: 1em;
+  list-style-type: disc;
+}
+
+.p-step__img {
+  margin-top: 62px;
+  width: 100%;
+  height: auto;
+}
