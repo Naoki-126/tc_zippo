@@ -8,7 +8,6 @@
   position: relative;
 
   span {
-    // font-family: 'Oswald', sans-serif;
     font-size: 32px;
   }
 
@@ -35,6 +34,10 @@
   @include global.mq(ss) {
     display: none;
   }
+
+  &.-step {
+    transform: skewY(3deg);
+  }
 }
 
 .p-order__sp1 {
@@ -47,7 +50,12 @@
     text-align: center;
     font-size: 12px;
     font-weight: 700;
+
+    &.-step {
+      transform: skewY(3.747558deg);
+    }
   }
+
 }
 
 .p-order__sp2 {
@@ -63,11 +71,13 @@
     // font-weight: 700;
     padding: 0 8px;
     position: relative;
+
+    &.-step {
+      transform: skewY(3.747558deg);
+    }
   }
 
   span {
-    font-family: DIN 2014;
-    font-family: Bahnschrift;
     font-size: 32px;
     font-weight: 700;
   }
@@ -97,6 +107,10 @@
   margin: 17px auto 0;
 
   @include global.mq(sp) {
-    margin-top: 0px;
+    margin-top: -2px;
+  }
+
+  &.-step {
+    transform: skewY(3deg);
   }
 }
