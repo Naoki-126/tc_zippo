@@ -4,29 +4,62 @@
   margin: 0 auto;
   padding-top: 120px;
   width: 100%;
+  height: auto;
+
+  @include global.mq(sp) {
+    padding-top: 59px;
+  }
 }
 
 .p-point__title {
   width: 100%;
   height: auto;
   text-align: center;
+  padding-left: 31px;
+
+  @include global.mq(sp) {
+    display: none;
+  }
+}
+
+.p-point__title-sp {
+  display: none;
+
+  @include global.mq(sp) {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin-left: 5px;
+  }
 }
 
 .p-point__contents {
-  margin: 22px auto 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  margin: 54px auto 0;
+  padding: 0 5px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 275px);
+  justify-content: center;
   width: 1000px;
   max-width: 100%;
+  gap: 58px 77px;
+
+  @include global.mq(ss) {
+    flex-direction: column;
+    margin-top: 59px;
+    margin-left: -2px;
+    gap: 49px 0;
+  }
 }
 
 .p-point__content {
   width: 275px;
+  max-width: 100%;
   height: 420px;
   background: global.$sub-color;
   color: #fff;
   margin-right: 77px;
+  z-index: 10;
 
   &:nth-child(3n) {
     margin-right: 0;
@@ -40,12 +73,51 @@
     margin-top: 112px;
   }
 
-  &:nth-child(4) {
-    margin-top: 58px;
-  }
 
   &:nth-child(5) {
-    margin-top: 114px;
+    margin-top: 56px;
+    margin-left: 10px;
+  }
+
+  @include global.mq(tab) {
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+
+    &:nth-child(4) {
+      margin-top: 56px;
+    }
+
+    &:nth-child(5) {
+      margin-top: 0;
+    }
+  }
+
+  @include global.mq(ss) {
+    margin-right: auto;
+    margin-left: auto;
+    margin-left: 3px;
+
+    &:nth-child(3n) {
+      margin-right: auto;
+    }
+
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+
+    &:nth-child(4) {
+      margin-top: 0;
+    }
+
+    &:nth-child(5) {
+      margin-top: 0;
+      margin-left: 1px;
+    }
   }
 }
 
@@ -60,7 +132,6 @@
 .p-point__number {
   font-size: 20px;
   font-weight: 700;
-  letter-spacing: .13;
 
   span {
     font-size: 28px;
@@ -74,8 +145,10 @@
 .p-point__head {
   font-size: 24px;
   font-weight: 700;
+  padding-right: 12px;
 }
 
 .p-point__body {
   margin-top: 15px;
+
 }

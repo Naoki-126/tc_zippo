@@ -1,0 +1,10 @@
+@use "../global" as global;
+
+.l-brand {
+  margin: 0 auto;
+  margin-top: -100px;
+  background: url(/assets/img/brand-bg.png) no-repeat center center /cover;
+  transform: skewY(-3deg);
+  width: 100%;
+  height: auto;
+}

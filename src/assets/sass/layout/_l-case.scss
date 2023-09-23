@@ -1,0 +1,10 @@
+@use "../global" as global;
+
+.l-case {
+  margin: 0 auto;
+  margin-top: -100px;
+  background: url(/assets/img/case-bg.png) no-repeat center center /cover;
+  width: 100%;
+  height: auto;
+}
+
