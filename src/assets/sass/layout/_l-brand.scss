@@ -7,4 +7,10 @@
   transform: skewY(-3deg);
   width: 100%;
   height: auto;
+
+  @include global.mq(sp) {
+    background: url(/assets/img/brand-bg__sp.png)no-repeat center center /cover;
+    transform: skewY(-6deg);
+    margin-top: -92px;
+  }
 }
