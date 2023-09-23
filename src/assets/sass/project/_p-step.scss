@@ -33,6 +33,7 @@
   display: flex;
   margin-top: 17px;
   margin-left: 7px;
+  // background: url(/assets/img/step1.svg) no-repeat 37% 50%/contain;
 
   @include global.mq(sp) {
     margin-top: 15px;
@@ -72,10 +73,9 @@
   width: 1000px;
   max-width: 100%;
   margin-top: 140px;
-  justify-content: flex-start;
-  justify-content: center;
   display: grid;
   grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: center;
   gap: 66px;
 
   @include global.mq(sp) {
@@ -154,9 +154,9 @@
 }
 
 .p-step__head {
-  border-left: 8px solid global.$accent-subColor;
-  padding-left: 8px;
   margin-top: 25px;
+  padding-left: 8px;
+  border-left: 8px solid global.$accent-subColor;
   font-size: 18px;
   font-weight: 700;
 }

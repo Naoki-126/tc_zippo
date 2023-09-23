@@ -6,5 +6,9 @@
   background: url(/assets/img/case-bg.png) no-repeat center center /cover;
   width: 100%;
   height: auto;
-}
 
+
+  @include global.mq(sp) {
+    background: url(/assets/img/case-bg__sp.png) no-repeat center center /cover;
+  }
+}

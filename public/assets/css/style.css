@@ -737,7 +737,6 @@ a {
 	display: grid;
 	gap: 66px;
 	grid-template-columns: repeat(auto-fit, 200px);
-	justify-content: flex-start;
 	justify-content: center;
 	margin-top: 140px;
 	max-width: 100%;
@@ -878,11 +877,110 @@ a {
 }
 
 .p-case {
-	padding: 200px 0 100px;
+	padding: 225px 0;
+}
+
+.p-case__top {
+	margin: 0 auto;
+	text-align: center;
 }
 
 .p-case__title {
-	text-align: center;
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 1.2;
+	position: relative;
+	z-index: 10;
+}
+
+.p-case__title span {
+	font-size: 60px;
+}
+
+.p-case__title::after {
+	background: url(/assets/img/case-logo.svg) no-repeat center center/contain;
+	bottom: -23%;
+	content: "";
+	height: 78px;
+	left: 56%;
+	position: absolute;
+	width: 150px;
+	z-index: -1;
+}
+
+.p-case__lists {
+	display: grid;
+	gap: 47px 66px;
+	grid-template-columns: repeat(auto-fit, 200px);
+	justify-content: center;
+	margin: 70px auto 0;
+	max-width: 100%;
+	width: 1000px;
+}
+
+.p-case__list {
+	height: 380px;
+	width: 200px;
+}
+
+.p-case__img {
+	background: #fff;
+	height: 200px;
+	padding: 31px 51px;
+	width: 200px;
+}
+
+.p-case__img img {
+	height: auto;
+	width: 100%;
+}
+
+.p-case__body {
+	margin-top: 13px;
+	width: 215px;
+}
+
+.p-case__subTitle {
+	border-left: 8px solid #ED1C24;
+	color: #333;
+	font-size: 18px;
+	font-weight: 700;
+	padding-left: 8px;
+}
+
+.p-case__price {
+	align-items: center;
+	background: url(/assets/img/case-price.png) no-repeat center center/contain;
+	display: flex;
+	gap: 36px;
+	height: 30px;
+	justify-content: center;
+	left: 0;
+	margin-left: -6px;
+	margin-top: 21px;
+	top: 0;
+	width: 218px;
+}
+
+.p-case__name {
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.p-case__money {
+	color: #ED1C24;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+.p-case__money span {
+	font-size: 28px;
+	font-size: 24px;
+}
+
+.p-case__comment {
+	margin-left: 225px;
+	margin-top: 94px;
 }
 
 .p-brand {
@@ -1253,6 +1351,16 @@ a {
 	margin-top: -172px;
 }
 
+.l-case {
+	background: url(/assets/img/case-bg__sp.png) no-repeat center center/cover;
+}
+
+.l-brand {
+	background: url(/assets/img/brand-bg__sp.png) no-repeat center center/cover;
+	margin-top: -92px;
+	transform: skewY(-6deg);
+}
+
 .c-footer {
 	width: 100%;
 }
@@ -1507,6 +1615,105 @@ a {
 .p-step__img {
 	margin-top: 37px;
 	padding: 0 24px;
+}
+
+.p-case {
+	padding: 152px 0;
+}
+
+.p-case__title {
+	font-size: 28px;
+	line-height: 1.35;
+}
+
+.p-case__title span {
+	font-size: 40px;
+}
+
+.p-case__title::after {
+	bottom: -8%;
+	height: 50px;
+	left: 68%;
+	width: 95px;
+}
+
+.p-case__lists {
+	gap: 50px;
+	grid-template-columns: repeat(auto-fit, 250px);
+	margin: 57px auto 0;
+}
+
+.p-case__list:nth-child(2) {
+	margin-top: -24px;
+}
+
+.p-case__list:nth-child(3) {
+	margin-top: 30px;
+}
+
+.p-case__list:nth-child(5) {
+	margin-top: 59px;
+}
+
+.p-case__list:nth-child(6) {
+	margin-top: 88px;
+}
+
+.p-case__list:nth-child(7) {
+	margin-top: 29px;
+}
+
+.p-case__list:nth-child(8) {
+	margin-top: 28px;
+}
+
+.p-case__img {
+	height: 250px;
+	padding: 37px 63px;
+	width: 250px;
+}
+
+.p-case__img img {
+	height: 175px;
+	width: 123px;
+}
+
+.p-case__body {
+	width: 243px;
+}
+
+.p-case__subTitle {
+	font-size: 20px;
+}
+
+.p-case__price {
+	gap: 36px;
+	height: 32px;
+	margin-left: -4px;
+	margin-top: 29px;
+	width: 250px;
+}
+
+.p-case__name {
+	font-size: 14px;
+}
+
+.p-case__money {
+	font-size: 18px;
+}
+
+.p-case__money span {
+	font-size: 32px;
+	font-size: 28px;
+}
+
+.p-case__comment {
+	margin-left: 0;
+	margin-top: 80px;
+}
+
+.p-case__text {
+	font-size: 13px;
 }
 
 .p-footer__address {
