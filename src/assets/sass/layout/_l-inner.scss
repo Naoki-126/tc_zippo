@@ -9,4 +9,11 @@
     width: 100%;
     padding: 0 11px;
   }
+
+  &.-brand {
+
+    @include global.mq(sp) {
+      padding: 0 3px;
+    }
+  }
 }
