@@ -126,14 +126,14 @@
 .p-brand__footer{
   width: 100%;
   transform: skewY(3deg);
-  padding-bottom: 320px;
+  padding-bottom: 259px;
   background: url(/assets/img/brand-bg__footer.png)no-repeat center 50%/cover;
   box-shadow: 0 -280px 280px #060A09;
 
   @include global.mq(sp) {
     transform: skewY(6deg);
     box-shadow: 0 -110px 110px #060A09;
-
+    padding-bottom: 37px;
   }
 }
 

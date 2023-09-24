@@ -22,4 +22,13 @@
       padding: 27px 0 65px;
     }
   }
+
+  &.-voice {
+    padding: 83px 0 121px;
+
+    @include global.mq(sp) {
+      padding: 21px 0 32px;
+    }
+  }
+
 }
