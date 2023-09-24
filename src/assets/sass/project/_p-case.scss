@@ -1,6 +1,7 @@
 @use "../global" as global;
 
 .p-case {
+  margin: 0 auto;
   padding: 225px 0;
 
   @include global.mq(sp) {
@@ -9,7 +10,6 @@
 }
 
 .p-case__top {
-  margin: 0 auto;
   text-align: center;
 }
 
@@ -36,7 +36,7 @@
   &::after {
     content: "";
     position: absolute;
-    background: url(/assets/img/case-logo.svg) no-repeat center center/contain;
+    background: url(/assets/img/case.svg) no-repeat center center/contain;
     width: 150px;
     height: 78px;
     bottom: -23%;
