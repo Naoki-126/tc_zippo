@@ -108,9 +108,14 @@
 
   @include global.mq(sp) {
     margin-top: -2px;
+
+    &.-voice {
+      margin-top: 0;
+    }
   }
 
   &.-step {
     transform: skewY(3deg);
   }
+
 }
