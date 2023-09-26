@@ -1,0 +1,8 @@
+@use "../global" as global;
+
+.l-feature {
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  background: url(/assets/img/feature-bg.png)no-repeat center center/ cover;
+}
