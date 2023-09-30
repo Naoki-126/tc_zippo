@@ -3378,6 +3378,10 @@ a {
 	padding-left: 0;
 }
 
+.p-qa__categories {
+	gap: 33px 8px; /*  スマホ表示で min(5.76vw,83px)が2列にならなかったら入れる*/
+}
+
 .p-feature__low {
 	text-align: left;
 }
