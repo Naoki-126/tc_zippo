@@ -34,6 +34,7 @@
 
   @include global.mq(sp) {
     font-size: 40px;
+    font-size: min(12.5vw, 40px);
 
     &::after {
       width: 123px;

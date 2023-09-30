@@ -139,6 +139,7 @@
 
 .p-brand__inner {
   width: global.$inner-width;
+  margin: 0 auto;
   max-width: 100%;
 
   @include global.mq(sp) {

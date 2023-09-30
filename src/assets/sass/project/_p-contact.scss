@@ -41,6 +41,7 @@
 
     span {
       font-size: 32px;
+      font-size: min(10vw, 32px);
     }
 
     &::after {

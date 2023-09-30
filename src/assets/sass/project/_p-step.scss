@@ -11,8 +11,12 @@
   @include global.mq(sp) {
     background: none;
     margin-top: 244px;
-    padding-left: 0;
     margin-bottom: 187px;
+  }
+
+  @include global.mq(ss) {
+    padding-left: 0;
+
   }
 }
 
@@ -33,7 +37,6 @@
   display: flex;
   margin-top: 17px;
   margin-left: 7px;
-  // background: url(/assets/img/step1.svg) no-repeat 37% 50%/contain;
 
   @include global.mq(sp) {
     margin-top: 15px;
