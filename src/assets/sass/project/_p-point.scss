@@ -44,11 +44,11 @@
   max-width: 100%;
   gap: 58px 77px;
 
-  @include global.mq(ss) {
+  @include global.mq(sp) {
     flex-direction: column;
     margin-top: 59px;
     margin-left: -2px;
-    gap: 49px 0;
+    gap: 49px 10px;
   }
 }
 
@@ -93,7 +93,7 @@
     }
   }
 
-  @include global.mq(ss) {
+  @include global.mq(sp) {
     margin-right: auto;
     margin-left: auto;
     margin-left: 3px;
