@@ -714,6 +714,7 @@ a {
 	background: #333333;
 	color: #fff;
 	height: 420px;
+	height: auto;
 	margin-right: 77px;
 	max-width: 100%;
 	width: 275px;
@@ -1025,7 +1026,7 @@ a {
 	display: flex;
 	gap: 36px;
 	height: 30px;
-	justify-content: center;
+	justify-content: space-between;
 	left: 0;
 	margin-left: -6px;
 	margin-top: 21px;
@@ -1055,7 +1056,7 @@ a {
 }
 
 .p-brand {
-	padding: 88px 0 308px;
+	padding: 88px 0 120px;
 	transform: skewY(3deg);
 }
 
@@ -1121,8 +1122,10 @@ a {
 
 .p-brand__footer {
 	background: url(/assets/img/brand-bg__footer.png) no-repeat center 50%/cover;
-	box-shadow: 0 -280px 280px #060A09;
+	box-shadow: 0 -30px 30px #060A09;
 	padding-bottom: 259px;
+	padding-bottom: 49px;
+	padding-top: 60px;
 	transform: skewY(3deg);
 	width: 100%;
 }
@@ -2846,7 +2849,6 @@ a {
 }
 
 .p-brand__footer {
-	box-shadow: 0 -110px 110px #060A09;
 	padding-bottom: 37px;
 	transform: skewY(6deg);
 }
