@@ -245,6 +245,46 @@ a {
 	width: 100%;
 }
 
+.l-qa__1 {
+	animation-duration: 3s;
+	animation-name: my-fade-in;
+	display: none;
+}
+
+.l-qa__1.is-show {
+	display: block;
+}
+
+.l-qa__2 {
+	animation-duration: 3s;
+	animation-name: my-fade-in;
+	display: none;
+}
+
+.l-qa__2.is-show {
+	display: block;
+}
+
+.l-qa__3 {
+	animation-duration: 3s;
+	animation-name: my-fade-in;
+	display: none;
+}
+
+.l-qa__3.is-show {
+	display: block;
+}
+
+.l-qa__4 {
+	animation-duration: 3s;
+	animation-name: my-fade-in;
+	display: none;
+}
+
+.l-qa__4.is-show {
+	display: block;
+}
+
 .l-feature {
 	background: linear-gradient(rgb(77, 77, 77), rgb(77, 77, 77)), url(/assets/img/feature-bg.png) no-repeat 50% 50%/cover;
 	background-blend-mode: multiply;
@@ -498,6 +538,11 @@ a {
 	margin-right: 30px;
 	margin-top: 14px;
 	padding: 2px 48px;
+}
+
+.p-header__contact:hover {
+	transform: scale(1.05);
+	transition: all 0.5s ease;
 }
 
 .p-header__text {
@@ -1326,7 +1371,7 @@ a {
 }
 
 .p-qa__title::after {
-	background: url(/assets/img/qa.svg) no-repeat center center/contain;
+	background: url(../img/qa.svg) no-repeat center center/contain;
 	bottom: -58%;
 	content: "";
 	height: 123px;
@@ -1345,11 +1390,16 @@ a {
 	margin: 83px auto 0;
 }
 
+.p-qa__categories li {
+	cursor: pointer;
+}
+
 .p-qa__category {
 	display: inline-block;
 	font-size: 18px;
 	position: relative;
 	text-align: center;
+	transition: all 0.3s ease;
 }
 
 .p-qa__category::after {
@@ -1368,7 +1418,7 @@ a {
 }
 
 .p-qa__category.is-active::before {
-	background: url(/assets/img/arrow-black.svg) no-repeat;
+	background: url(../img/arrow-black.svg) no-repeat;
 	content: "";
 	height: 11px;
 	left: 50%;
@@ -1390,9 +1440,16 @@ a {
 }
 
 .p-qa__question {
+	cursor: pointer;
 	font-size: 18px;
 	padding: 8px 0 11px 66px;
 	position: relative;
+}
+
+.p-qa__question:hover {
+	opacity: 0.7;
+	transform: scale(1.05);
+	transition: all 0.5s ease;
 }
 
 .p-qa__question::before {
@@ -1401,21 +1458,27 @@ a {
 	font-weight: 700;
 	left: -4px;
 	position: absolute;
-	top: 60%;
+	top: 50%;
 	transform: translateY(-50%);
 }
 
 .p-qa__arrow1 {
-	background: url(/assets/img/arrow-down__qa.svg) no-repeat;
+	background: url(../img/arrow-down__qa.svg) no-repeat;
 	height: 16px;
 	position: absolute;
 	right: 2px;
 	top: 45%;
 	transform: translateY(-50%);
+	transition: all 0.3s ease;
 	width: 27px;
 }
 
+.p-qa__arrow1.is-open {
+	transform: rotate(180deg);
+}
+
 .p-qa__answer {
+	display: none;
 	font-size: 18px;
 	margin-top: 32px;
 	padding: 8px 0 11px 66px;
@@ -1433,7 +1496,7 @@ a {
 	font-weight: 700;
 	left: -2px;
 	position: absolute;
-	top: 57%;
+	top: 50%;
 	transform: translateY(-50%);
 }
 
@@ -1973,7 +2036,8 @@ a {
 }
 
 .p-contact__btn [type=submit]:hover {
-	opacity: 0.7;
+	transform: scale(1.05);
+	transition: all 0.5s ease;
 }
 
 .p-footer {
@@ -3044,7 +3108,7 @@ a {
 }
 
 .p-qa__arrow1 {
-	background: url(/assets/img/arrow-down__sp.svg) no-repeat;
+	background: url(../img/arrow-down__sp.svg) no-repeat;
 	height: 9px;
 	top: 10px;
 	width: 16px;
@@ -3445,6 +3509,54 @@ a {
 	overflow: hidden;
 	padding: 13px 22px 11px;
 	width: 299px;
+}
+
+}
+
+@keyframes my-fade-in {
+
+from {
+	opacity: 0;
+}
+
+to {
+	opacity: 1;
+}
+
+}
+
+@keyframes my-fade-in {
+
+from {
+	opacity: 0;
+}
+
+to {
+	opacity: 1;
+}
+
+}
+
+@keyframes my-fade-in {
+
+from {
+	opacity: 0;
+}
+
+to {
+	opacity: 1;
+}
+
+}
+
+@keyframes my-fade-in {
+
+from {
+	opacity: 0;
+}
+
+to {
+	opacity: 1;
 }
 
 }
