@@ -23,6 +23,11 @@
   background: global.$accent-color;
   padding: 2px 48px;
   border-radius: 99px;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all .5s ease;
+  }
 }
 
 .p-header__text {

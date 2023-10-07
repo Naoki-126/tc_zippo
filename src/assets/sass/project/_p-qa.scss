@@ -24,7 +24,7 @@
   &::after {
     content: "";
     position: absolute;
-    background: url(/assets/img/qa.svg) no-repeat center center /contain;
+    background: url(../img/qa.svg) no-repeat center center /contain;
     width: 170px;
     height: 123px;
     bottom: -58%;
@@ -61,7 +61,10 @@
 
   @include global.mq(ss) {
     gap: 33px 8px;  /*  スマホ表示で min(5.76vw,83px)が2列にならなかったら入れる*/
+  }
 
+  li {
+    cursor: pointer;
   }
 }
 
@@ -70,6 +73,7 @@
   text-align: center;
   font-size: 18px;
   position: relative;
+  transition: all .3s ease;
 
   &::after {
     content: "";
@@ -88,7 +92,7 @@
     &::before{
       content: "";
       position: absolute;
-      background: url(/assets/img/arrow-black.svg)no-repeat;
+      background: url(../img/arrow-black.svg)no-repeat;
       width: 11px;
       height: 11px;
       top: -17px;
@@ -148,6 +152,13 @@
   padding: 8px 0 11px 66px;
   font-size: 18px;
   position: relative;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    transition: all .5s ease;
+    opacity: .7;
+  }
 
   &::before {
     content: "Q";
@@ -155,7 +166,7 @@
     font-size: 36px;
     font-weight: 700;
     left: -4px;
-    top: 60%;
+    top: 50%;
     transform: translateY(-50%);
   }
 
@@ -171,15 +182,20 @@
 
 .p-qa__arrow1 {
   position: absolute;
-  background: url(/assets/img/arrow-down__qa.svg)no-repeat;
+  background: url(../img/arrow-down__qa.svg)no-repeat;
   width: 27px;
   height: 16px;
   right: 2px;
   top: 45%;
   transform: translateY(-50%);
+  transition: all .3s ease;
+
+  &.is-open {
+    transform: rotate(180deg);
+  }
 
   @include global.mq(sp) {
-    background: url(/assets/img/arrow-down__sp.svg)no-repeat;
+    background: url(../img/arrow-down__sp.svg)no-repeat;
     width: 16px;
     height: 9px;
     top: 10px;
@@ -195,6 +211,7 @@
   padding: 8px 0 11px 66px;
   font-size: 18px;
   position: relative;
+  display: none;
 
   span {
     color: global.$accent-subColor;
@@ -207,7 +224,7 @@
     font-size: 36px;
     font-weight: 700;
     left: -2px;
-    top: 57%;
+    top: 50%;
     transform: translateY(-50%);
   }
 
